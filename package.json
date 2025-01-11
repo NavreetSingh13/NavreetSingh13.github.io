@@ -9,6 +9,8 @@
     "build": "vite build",  
     "preview": "vite preview",
     "lint": "eslint ."    
+    "homepage": "https://NavreetSingh13.github.io/NavreetSingh13.github.io"
+
   },
   "dependencies": {
     "react": "^18.3.1",
