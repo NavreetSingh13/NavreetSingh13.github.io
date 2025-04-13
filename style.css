@@ -476,6 +476,71 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
+/* .about-me h1 {
+  font-size: 2.5rem;
+  color: #0b5ed7;
+  margin-bottom: 10px;
+}
+.about-me h1 span {
+  color: #111;
+}
+
+.about-me h2 {
+  margin-top: 30px;
+  color: #2b2b2b;
+  font-size: 1.5rem;
+  border-left: 4px solid #0b5ed7;
+  padding-left: 10px;
+}
+
+.about-me p, li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.about-me ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.intro {
+  font-weight: 500;
+}
+
+.projects, .roles {
+  margin-left: 20px;
+}
+
+.closing {
+  font-style: italic;
+  color: #555;
+}
+
+.about-me ul li::before {
+  content: "• ";
+  color: #0b5ed7;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+}
+
 .about-me {
   padding: 40px 20px;
   background-color: #333;
@@ -504,7 +569,10 @@ main {
   font-weight: bold;
   transition: transform 0.3s ease, color 0.3s ease;
   animation: floating 3s ease-in-out infinite, textAnimation 1s ease-out forwards;
+
 }
+
+
 
 @keyframes floating {
   0% {
@@ -533,6 +601,164 @@ main {
     transform: translateY(0);
     opacity: 1;
   }
+} */
+
+.about-me {
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  text-align: left;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-me h1{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  color: hsl(200, 100%, 85%);
+  animation: fadeInUp 1.4s ease;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.highlighted-name {
+  background: linear-gradient(90deg, hsl(160, 60%, 70%), hsl(330, 100%, 75%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease, text-shadow 0.4s ease;
+}
+
+.highlighted-name:hover {
+  transform: scale(1.08);
+  text-shadow: 0 0 10px hsla(330, 100%, 75%, 0.5), 0 0 20px hsla(160, 60%, 70%, 0.3);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+}
+
+.about-me h2 {
+  margin-top: 30px;
+  color: #f0f0f0;
+  font-size: 1.8rem;
+  border-left: 4px solid #00bfff;
+  padding-left: 12px;
+}
+
+.about-me p,
+.about-me li {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #dddddd;
+}
+
+.intro {
+  font-weight: 500;
+}
+
+.about-me ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+.projects,
+.roles {
+  margin-left: 20px;
+}
+
+.about-me ul li::before {
+  content: "• ";
+  color: #00bfff;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.about-me strong {
+  color: hsl(160, 60%, 70%);
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: floating 3s ease-in-out infinite, textAnimation 1s ease-out forwards;
+}
+
+.closing {
+  font-style: italic;
+  color: #bbbbbb;
+  margin-top: 30px;
+}
+
+.about-me strong:hover {
+  transform: scale(1.1);
+  color: hsl(45, 100%, 70%);
+  animation: none;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 30px 15px;
+  }
+
+  .about-me h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-me h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-me p,
+  .about-me li {
+    font-size: 1rem;
+  }
 }
 
 /*--------*\
@@ -542,30 +768,30 @@ main {
 .service {
   padding: 50px 20px;
   text-align: center;
-  background-color: #333; /* Black background */
-  color: #fff; /* White text color for contrast */
-  border-radius: 15px; /* Rounded corners for the box */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow around the box */
-  max-width: 900px; /* Optional: Set max width to make it look better on large screens */
-  margin: 40px auto; /* Center-align the section and add some margin from top and bottom */
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 40px auto;
 }
 
 .service-title {
   font-size: 2em;
-  color: #ffffff; /* A blue color for the title */
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .floating-social-row {
   position: relative;
-  bottom: 20px; /* Position the icons 20px from the bottom */
-  left: 50%;    /* Center align the row */
-  transform: translateX(-50%); /* Align horizontally */
-  display: flex;               /* Change layout to horizontal */
-  flex-direction: row;         /* Ensure horizontal layout */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;                   /* Space between the icons */
+  gap: 20px;
   list-style-type: none;
   padding: 0;
   z-index: 5;
@@ -580,10 +806,10 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 60px; /* Box width */
-  height: 60px; /* Box height */
+  width: 60px;
+  height: 60px;
   background-color: #333;
-  border-radius: 10px; /* Slightly rounded corners */
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   text-align: center;
@@ -597,13 +823,13 @@ main {
 }
 
 .social-link:hover {
-  transform: translateY(-5px) scale(1.1); /* Slightly lift and enlarge the box */
+  transform: translateY(-5px) scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .social-link img:hover {
-  transform: rotate(360deg); /* Rotate icon on hover */
+  transform: rotate(360deg);
   filter: brightness(1.2);
   transition: transform 0.6s ease-in-out;
 }
@@ -618,6 +844,10 @@ main {
 
 .social-link.leetcode {
   background-color: #f89f1b;
+}
+
+.social-link.MLSA {
+  background-color: #ffffff;
 }
 
 .social-link.linkedin:hover {
