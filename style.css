@@ -760,6 +760,52 @@ main {
     font-size: 1rem;
   }
 }
+.guinness-record {
+  background-color: transparent;
+  padding: 20px 0;
+  border-radius: 0;
+  margin-top: 30px;
+  color: #dddddd;
+  animation: fadeInUp 1.5s ease;
+  text-align: center;
+  box-shadow: none;
+}
+
+.record-badge {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  animation: pulseBadge 3s infinite;
+}
+
+.record-cta {
+  margin-top: 10px;
+  font-style: italic;
+  color: #e0f7fa;
+}
+
+.guinness-record a {
+  color: #ffdd57;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@keyframes pulseBadge {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px #ffd700);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #ffea00);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px #ffd700);
+  }
+}
+
 
 /*--------*\
   #Service
