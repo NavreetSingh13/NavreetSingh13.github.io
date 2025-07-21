@@ -1341,7 +1341,7 @@ main {
 }
 
 .project-card {
-  background-color: white;
+  background-color: #1f1f1f;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -1380,14 +1380,15 @@ main {
 
 .card-content h3 {
   font-size: 1.5em;
-  color: #333;
+  color: white;
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
 
 .card-content p {
-  color: #555;
-  font-size: 1em;
+  color: rgb(226, 223, 23);
+  text-shadow: #010508 2px 2px 5px;
+  font-size: 1.3em;
   margin: 10px 0;
 }
 
